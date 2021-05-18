@@ -6,5 +6,5 @@ NomedoVetor.reverse() //A função .reverse() inverte a ordem do vetor
 for i in range(Valor/Variável): //Assim se inicia um ciclo de repetição "for"
 NomedoVetor = [] //Assim se cria um vetor
 NomedaVariavel = sum(NomedoVetor) //A função sum() faz a soma dos valores inseridos no vetor
-tamanho = len(notas) //A função len() traz o tamanho do vetor
-print(', '.join([str(Variável/Vetor) for Variável/Vetor in Variável/Vetor if Variável/Vetor < Variável])) //A função .join() consegue fazer uma seleção/filtro dos valores armazenados nos vetores.
+tamanho = len(Vetor) //A função len() traz o tamanho do vetor
+print(', '.join([str(Variável) for Variável in Variável if Variável < Variável])) //A função .join() consegue fazer uma seleção/filtro dos valores armazenados nos vetores.
