@@ -1,4 +1,4 @@
-print('Calculo de comissão + salario semanal')
+print('Calculo de comissão + salario mensal')
 
 salario = []
 vendas = []
@@ -10,7 +10,7 @@ while True:
         break
     vendedor.append(nome)
     vender = 's'
-    semana = 200
+    semana = 1000
     while vender == 's':
         num = float(input('Digite o valor da venda: '))
         vendas.append(num)
@@ -18,18 +18,19 @@ while True:
         vender = str(input('Deseja adicionar outra venda ?\n'))
         if vender != 's':
             salario.append(semana)
-tamanho = len(vendedor)
-
-print('Salarios a pagar de 200 até 1000')
-print(', '.join([str(semana) for semana in salario if semana > 200 and semana < 1000 ]))
 
 print('Salarios a pagar de 1000 até 3000')
 print(', '.join([str(semana) for semana in salario if semana > 1000 and semana < 3000 ]))
 
-print('Salarios a pagar acima de 3000')
-print(', '.join([str(semana) for semana in salario if semana > 3000]))
+print('Salarios a pagar de 3000 até 7000')
+print(', '.join([str(semana) for semana in salario if semana > 3000 and semana < 7000 ]))
 
-print(f'Vendedores da Semana {vendedor}\nVendas da Semana {vendas}')
+print('Salarios a pagar acima de 7000')
+print(', '.join([str(semana) for semana in salario if semana > 7000]))
 
-for i in range(tamanho):
-    print(f'O vendedor {vendedor}, deverá receber {salario} essa semana.')
+print(f'Vendedores do mês {vendedor}\nVendas do mês {vendas}')
+
+j = 0
+for i in vendedor:
+    print(f'O vendedor {i}, deverá receber {salario[j]} esse mês.')
+    j+=1
